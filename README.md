@@ -1,14 +1,10 @@
 <p align="center">
   
-# 🤖 Machine Learning Hub
+# **🤖 Machine Learning Hub**
 
-> A comprehensive collection of Machine Learning and Deep Learning algorithms implemented from scratch in Python, with mathematical derivations, detailed explanations, and practical examples.
+> A comprehensive collection of Machine Learning and Deep Learning algorithms implemented from scratch in Python, with mathematical intution, detailed explanations, and practical examples.
 
----
-
-  Learn • Implement • Experiment • Understand
-
----
+  **Learn • Implement • Experiment • Understand**
   
 </p>
 
@@ -16,10 +12,11 @@
 
 ## 📖 Overview
 
-Machine Learning Hub is an educational repository dedicated to implementing machine learning algorithms from first principles.
-Rather than relying on high-level machine learning frameworks, this project focuses on understanding the mathematics and logic behind every algorithm by building each one from scratch.
+Machine Learning Hub is an educational repository implementing machine learning algorithms from scratch instead of relying on high-level machine learning frameworks. The focus is to understand the mathematics, logic and optimization behind every algorithm.
 
-The objective is to develop a strong foundation in machine learning while writing clean, well-structured, and reusable code.
+## 💡 Objective 
+
+> To develop a strong foundation in machine learning with clean, well-structured, and reusable code.
 
 ---
 
