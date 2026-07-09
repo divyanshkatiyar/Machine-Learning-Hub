@@ -1,10 +1,18 @@
+<p align="center">
+  
 # 🤖 Machine Learning Hub
 
-«A comprehensive collection of Machine Learning and Deep Learning algorithms implemented from scratch in Python, with mathematical derivations, detailed explanations, and practical examples.»
+> A comprehensive collection of Machine Learning and Deep Learning algorithms implemented from scratch in Python, with mathematical derivations, detailed explanations, and practical examples.
 
-<p align="center">
+---
+
   Learn • Implement • Experiment • Understand
-</p>---
+
+---
+  
+</p>
+
+---
 
 ## 📖 Overview
 
@@ -59,7 +67,7 @@ Machine-Learning-Hub/
 
 ## 📚 Machine Learning Roadmap
 
-> Supervised Learning
+> ### Supervised Learning
 
 - ✅ Linear Regression
 - ⏳ Logistic Regression
@@ -69,12 +77,12 @@ Machine-Learning-Hub/
 - ⏳ Random Forest
 - ⏳ Support Vector Machine (SVM)
 
-> Unsupervised Learning
+> ### Unsupervised Learning
 
 - ⏳ K-Means Clustering
 - ⏳ Principal Component Analysis (PCA)
 
-> Deep Learning
+> ### Deep Learning
 
 - ⏳ Neural Networks
 - ⏳ Gradient Descent
