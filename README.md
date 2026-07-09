@@ -29,6 +29,7 @@ The objective is to develop a strong foundation in machine learning while writin
 
 ## 🗂 Repository Structure
 
+```
 Machine-Learning-Hub/
 │
 ├── 01_Linear_Regression/
@@ -52,6 +53,7 @@ Machine-Learning-Hub/
 ├── assets/
 ├── README.md
 └── LICENSE
+```
 
 ---
 
