@@ -25,7 +25,10 @@ This project includes simple Python programs that show how to:
 ---
 
 ## 📂 Project Structure
+
+```
 python-mysql-connectivity/ │ ├── connect.py          # MySQL connection ├── create_table.py     # Table creation ├── insert_data.py      # Insert records ├── read_data.py        # Fetch records ├── update_data.py      # Update records ├── delete_data.py      # Delete records ├──
+```
 ---
 
 ## ⚙️ Requirements
