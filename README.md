@@ -102,8 +102,6 @@ Machine-Learning-Hub/
 
 ## 🎯 Project Goals
 
-> This repository aims to:
-
 - Build every algorithm from scratch.
 - Understand the mathematical foundations of Machine Learning.
 - Improve problem-solving and implementation skills.
