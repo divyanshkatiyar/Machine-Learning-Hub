@@ -1,8 +1,7 @@
 # Python MySQL Connectivity
 
-Projects demonstrating connecting **Python** with **MySQL database** to perform basic database operations.  
-This repository is designed for building solving real world problems through Python-MySQL connectivity involving CRUD operations. 
-> This respository is also helpful for students in **practical exams**, and **learning purposes**.
+## 🎯 Aim
+Solving real world problems through **Python-MySQL connectivity** involving **database operations (CRUD)**, and helping students in practical exams and self-learning.
 
 ---
 
