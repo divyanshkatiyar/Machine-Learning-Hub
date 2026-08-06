@@ -2,7 +2,7 @@
   
 # **🤖 Machine Learning Hub**
 
-> A comprehensive collection of Machine Learning and Deep Learning algorithms implemented from scratch in Python, with mathematical intution, detailed explanations, and practical examples.
+A comprehensive collection of Machine Learning and Deep Learning algorithms implemented from scratch in Python, with mathematical intution, detailed explanations, and practical examples.
 
   **Learn • Implement • Experiment • Understand**
   
