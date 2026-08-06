@@ -123,7 +123,7 @@ Machine-Learning-Hub/
 
 Contributions, suggestions, and improvements are welcome.
 
-If you find an issue or have ideas for enhancement, feel free to open an issue or submit a pull request.
+> If you find an issue or have ideas for enhancement, feel free to open an issue or submit a pull request.
 
 ---
 
