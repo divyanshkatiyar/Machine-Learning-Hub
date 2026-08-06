@@ -4,8 +4,6 @@
 
 A comprehensive collection of Machine Learning and Deep Learning algorithms implemented from scratch in Python, with mathematical intution, detailed explanations, and practical examples.
 
-  **Learn • Implement • Experiment • Understand**
-  
 </p>
 
 ---
@@ -133,12 +131,19 @@ If you find an issue or have ideas for enhancement, feel free to open an issue o
 
 This project is licensed under the Apache License 2.0.
 
-See the LICENSE file for more information.
+> See the LICENSE file for more information.
 
 ---
 
 ## ⭐ Support
 
-If you find this repository helpful, please consider starring the repository.
-
 Your support helps motivate continued development and encourages others to discover the project.
+If you find this repository helpful, consider giving it a star 🌟.
+
+---
+<div align="center">
+  
+**Learn • Implement • Experiment • Understand**
+
+</div>
+
