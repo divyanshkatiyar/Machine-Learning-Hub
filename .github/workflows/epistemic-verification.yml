@@ -1,13 +1,27 @@
-name: Epistemic Solver CI
+name: Epistemic Interactive Solver
 
 on:
-  push:
-    branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
+  workflow_dispatch:
+    inputs:
+      variable_to_prune:
+        description: 'Choose which variable status to globally broadcast'
+        required: true
+        default: 'robot_02_fail'
+        type: choice
+        options:
+        - robot_02_fail
+        - robot_01_fail
+      boolean_state_value:
+        description: 'Set the broadcasted state value (True or False)'
+        required: true
+        default: 'False'
+        type: choice
+        options:
+        - 'False'
+        - 'True'
 
 jobs:
-  validate-logic:
+  interactive-run:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,6 +38,28 @@ jobs:
         python -m pip install --upgrade pip
         pip install networkx
 
-    - name: Check Epistemic Logic Engine Stability
+    - name: Run Existing Script with Custom Input Override
       run: |
-        python Epistemic_Logic_Engine/epistemic_engine.py
+        python -c "
+        import epistemic_engine as ee
+        engine = ee.KripkeWorldModel()
+        engine.add_world('W_00', {'robot_01_fail': False, 'robot_02_fail': False})
+        engine.add_world('W_10', {'robot_01_fail': True,  'robot_02_fail': False}, is_actual=True)
+        engine.add_world('W_01', {'robot_01_fail': False, 'robot_02_fail': True})
+        engine.add_world('W_11', {'robot_01_fail': True,  'robot_02_fail': True})
+        engine.add_uncertainty('W_00', 'W_10', 'robot_01')
+        engine.add_uncertainty('W_01', 'W_11', 'robot_01')
+        engine.add_uncertainty('W_00', 'W_01', 'robot_02')
+        engine.add_uncertainty('W_10', 'W_11', 'robot_02')
+        
+        print('🤖 [E.L.B.E.R.R. Core Logic Engine Online]')
+        print(f'📥 INPUT RECEIVED -> Broadcast: ${{ github.event.inputs.variable_to_prune }} is ${{ github.event.inputs.boolean_state_value }}')
+        
+        # Actively runs your exact function using your UI inputs!
+        engine.public_announcement('${{ github.event.inputs.variable_to_prune }}', ${{ github.event.inputs.boolean_state_value }})
+        
+        actual = engine.actual_world
+        print('\n🖥️ --- ENGINE THOUGHT REASONING STATUS ---')
+        print(f'Does robot_01 know its own status? -> {engine.agent_knows(\"robot_01\", \"robot_01_fail\", actual, depth=1)}')
+        print(f'Level 2 Recursive Check: Does robot_01 know that robot_02 knows about its fault? -> {engine.agent_knows(\"robot_01\", \"robot_01_fail\", actual, depth=2)}')
+        "
