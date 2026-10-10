@@ -13,8 +13,8 @@ TinyGPT is an experimental AI project. Its architecture, conversational capabili
 ## ✨ Key Features
 
 |Feature| Description|
-|🧠 GPT-Style Neural Model |Compact language model implemented from scratch using NumPy.|
 |:--- |:--- |
+|🧠 GPT-Style Neural Model |Compact language model implemented from scratch using NumPy.|
 |🔤 Byte-Level Tokenization| Processes UTF-8 text using a vocabulary of 256 possible byte values.|
 |💬 Conversational Interface| Supports interactive, text-based conversations through a command-line interface.|
 |🔎 Knowledge Retrieval| Retrieves relevant answers from built-in knowledge and locally stored question-answer pairs.|
