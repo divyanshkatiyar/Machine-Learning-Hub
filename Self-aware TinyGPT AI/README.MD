@@ -164,7 +164,7 @@ The current implementation does not provide unrestricted autonomous learning, in
 |"unittest"| Integrated automated testing|
 |Pydroid| Intended Android Python development and execution environment|
 
-> External machine-learning frameworks: The implementation does NOT use TensorFlow or PyTorch.
+> The implementation does NOT use any external machine-learning frameworks like TensorFlow or PyTorch.
 
 The program is designed to run locally and does not require a hosted language-model API for its core conversational functionality.
 
@@ -209,41 +209,27 @@ TinyGPT is an ongoing experimental project. Potential areas for further developm
 - Performance: Optimize training and inference for resource-constrained Android devices.
 - Data integrity: Improve validation, recovery, and protection of persistent files.
 
-These are development directions, not claims that the capabilities have already been implemented.
+> These are development directions, not claims that the capabilities have already been implemented.
 
 ## ⚠️ Limitations and Warnings
 
-1. Experimental model
+1. Experimental model — TinyGPT is a compact educational implementation, not a substitute for a modern, large-scale language model. Its limited model capacity and training data restrict the complexity and reliability of its responses.
 
-TinyGPT is a compact educational implementation, not a substitute for a modern, large-scale language model. Its limited model capacity and training data restrict the complexity and reliability of its responses.
+2. Self-awareness disclaimer — The self-model and simulated emotional states are software-defined behaviours. They should not be interpreted as evidence that TinyGPT is conscious, experiences emotions, or possesses subjective awareness.
 
-2. Self-awareness disclaimer
+3. Learning limitations — The program supports persistent knowledge and incremental training, but these mechanisms do not guarantee continuous improvement. Training can fail to generalize, introduce undesirable behaviour, or reduce the quality of other responses.
 
-The self-model and simulated emotional states are software-defined behaviours. They should not be interpreted as evidence that TinyGPT is conscious, experiences emotions, or possesses subjective awareness.
+4. Accuracy warning — The chatbot may produce incorrect, incomplete, irrelevant, or misleading answers. Do not rely on it as the sole source for medical, legal, financial, safety-critical, or other high-stakes decisions.
 
-3. Learning limitations
+5. Local data warning — Training examples and knowledge records are stored in local files. Review these files before sharing them or committing them to a public repository. Do not store passwords, authentication tokens, private credentials, or other sensitive information in the chatbot's memory.
 
-The program supports persistent knowledge and incremental training, but these mechanisms do not guarantee continuous improvement. Training can fail to generalize, introduce undesirable behaviour, or reduce the quality of other responses.
+6. Resource limitations — Model initialization, training, and generation consume processing time and memory. Performance varies across devices, and Android compatibility does not imply identical performance on every device.
 
-4. Accuracy warning
-
-The chatbot may produce incorrect, incomplete, irrelevant, or misleading answers. Do not rely on it as the sole source for medical, legal, financial, safety-critical, or other high-stakes decisions.
-
-5. Local data warning
-
-Training examples and knowledge records are stored in local files. Review these files before sharing them or committing them to a public repository. Do not store passwords, authentication tokens, private credentials, or other sensitive information in the chatbot's memory.
-
-6. Resource limitations
-
-Model initialization, training, and generation consume processing time and memory. Performance varies across devices, and Android compatibility does not imply identical performance on every device.
-
-7. No guaranteed autonomous behaviour
-
-TinyGPT does not independently acquire unrestricted knowledge, establish its own goals, or modify its entire source code autonomously. Its learning and memory operations are governed by the implemented program logic.
+7. No guaranteed autonomous behaviour — TinyGPT does not independently acquire unrestricted knowledge, establish its own goals, or modify its entire source code autonomously. Its learning and memory operations are governed by the implemented program logic.
 
 ## 📜 Disclaimer
 
-TinyGPT is provided as an experimental software project for educational, research, and development purposes.
+TinyGPT is provided as an experimental software project for educational, research, and development purposes only.
 
 The software is provided “AS IS”, without guarantees of accuracy, reliability, uninterrupted operation, or fitness for a particular purpose, to the maximum extent permitted by applicable law.
 
