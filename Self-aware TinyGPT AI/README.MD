@@ -12,19 +12,20 @@ TinyGPT is an experimental AI project. Its architecture, conversational capabili
 
 ## ✨ Key Features
 
-Feature| Description
-🧠 GPT-Style Neural Model| Compact language model implemented from scratch using NumPy.
-🔤 Byte-Level Tokenization| Processes UTF-8 text using a vocabulary of 256 possible byte values.
-💬 Conversational Interface| Supports interactive, text-based conversations through a command-line interface.
-🔎 Knowledge Retrieval| Retrieves relevant answers from built-in knowledge and locally stored question-answer pairs.
-💾 Persistent Memory| Saves supported facts and knowledge to local JSONL files for retrieval across sessions.
-📚 Interactive Learning| Accepts certain natural-language statements & stores useful information automatically.
-🔄 Incremental Training| Trains the neural model on pending saved examples and persists updated model parameters.
-🪞 Functional Self-Model| Describes its identity, capabilities, simulated feelings, goals, wishes, and limitations through programmed responses.
-🧮 Basic Reasoning| Includes support for arithmetic, Boolean logic, and selected logical inference tasks.
-🛡️ Response Validation| Filters neural-generated text for readability and relevance before using it as a response.
-📱 Android-Oriented Design| Designed with lightweight dependencies and compatibility with environments such as Pydroid in mind.
-🧪 Integrated Self-Tests| Includes tests for model generation, training, memory, reasoning, and self-model responses.
+|Feature| Description|
+|🧠 GPT-Style Neural Model |Compact language model implemented from scratch using NumPy.|
+|:--- |:--- |
+|🔤 Byte-Level Tokenization| Processes UTF-8 text using a vocabulary of 256 possible byte values.|
+|💬 Conversational Interface| Supports interactive, text-based conversations through a command-line interface.|
+|🔎 Knowledge Retrieval| Retrieves relevant answers from built-in knowledge and locally stored question-answer pairs.|
+|💾 Persistent Memory| Saves supported facts and knowledge to local JSONL files for retrieval across sessions.|
+|📚 Interactive Learning| Accepts certain natural-language statements & stores useful information automatically.|
+|🔄 Incremental Training| Trains the neural model on pending saved examples and persists updated model parameters.|
+|🪞 Functional Self-Model| Describes its identity, capabilities, simulated feelings, goals, wishes, and limitations through programmed responses.|
+|🧮 Basic Reasoning| Includes support for arithmetic, Boolean logic, and selected logical inference tasks.|
+|🛡️ Response Validation| Filters neural-generated text for readability and relevance before using it as a response.|
+|📱 Android-Oriented Design| Designed with lightweight dependencies and compatibility with environments such as Pydroid in mind.|
+|🧪 Integrated Self-Tests| Includes tests for model generation, training, memory, reasoning, and self-model responses.|
 
 ## 🏗️ Technical Architecture
 
