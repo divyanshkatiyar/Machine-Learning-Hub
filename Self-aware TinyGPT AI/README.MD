@@ -162,40 +162,7 @@ The program is designed to run locally and does not require a hosted language-mo
 
 ## 🚀 Getting Started
 
-Requirements
-
-- Python 3.
-- NumPy.
-- A compatible Python execution environment.
-- Sufficient available memory and processing capacity for model initialization and training.
-
-Installation
-
-Install NumPy if it is not already available:
-
-pip install numpy
-
-On Android, NumPy can be installed through the package-management interface of a compatible Python environment such as Pydroid.
-
-Run TinyGPT
-
-Place "TinyGPT_Chatbot_v3.py" in your working directory and execute:
-
-python TinyGPT_Chatbot_v3.py
-
 On its first launch, the program initializes the model and performs its configured bootstrap training. Subsequent launches attempt to load the saved model and train pending examples.
-
-Start entering messages when the chatbot becomes ready.
-
-To exit the conversation:
-
-exit
-
-The program also accepts:
-
-quit
-
-The model and optimizer state are saved when the application exits through the normal exit commands or handles a keyboard interruption.
 
 Run Automated Tests
 
