@@ -49,7 +49,7 @@ Its principal components include:
 
 The model learns patterns from training sequences by updating its numerical parameters. During generation, it predicts subsequent byte tokens based on the preceding context.
 
-> The implementation uses NumPy for its numerical computations rather than relying on a pretrained transformer library.
+> 🐍 The implementation uses NumPy for its numerical computations rather than relying on a pretrained transformer library.
 
 2. Conversational Response Pipeline
 
@@ -105,43 +105,48 @@ The principal model settings are defined near the beginning of "TinyGPT_Chatbot_
 |Temperature| 0.72| Configured sampling temperature|
 |Random seed| 42| Initial NumPy random seed|
 
-These are configurable defaults, not performance guarantees. Actual behaviour depends on the model implementation, training examples, saved parameters, and runtime environment.
+> ⚠️ These are configurable defaults, not performance guarantees. Actual behaviour depends on the model implementation, training examples, saved parameters, and runtime environment.
 
 ## 📚 Persistent Memory and Learning
 
 TinyGPT maintains local files for its model, training examples, and knowledge.
 
-File| Purpose
-"tinygpt_v3_model.npz"| Stores neural model parameters and Adam optimizer state.
-"tinygpt_v2_training.jsonl"| Stores question-answer training examples and their training status.
-"tinygpt_v2_knowledge.jsonl"| Stores question-answer pairs used by the knowledge retrieval system.
+|File |Purpose |
+|:--- |:--- |
+|"tinygpt_v3_model.npz"| Stores neural model parameters and Adam optimizer state.|
+|"tinygpt_v2_training.jsonl"| Stores question-answer training examples and their training status.|
+|"tinygpt_v2_knowledge.jsonl"| Stores question-answer pairs used by the knowledge retrieval system.|
 
-The filenames reflect the current source-code configuration. They can be changed by modifying the corresponding configuration variables.
+> The filenames reflect the current source-code configuration. They can be changed by modifying the corresponding configuration variables.
 
-Interactive Learning
+**Interactive Learning**
 
 TinyGPT can recognize certain statements written in natural language and save useful information.
 
 For example:
 
+```
 You: My favorite color is blue.
 AI: [Learning acknowledgement]
+```
 
 The program can save supported personal facts and generate corresponding question-answer records.
 
 A saved training example uses this structure:
 
+```
 {
   "prompt": "What is a transistor?",
   "answer": "A transistor is a semiconductor device used for switching or amplification.",
   "trained": false
 }
+```
 
 The actual files use JSON Lines (JSONL) format, meaning each record is stored as a separate JSON object on its own line.
 
-Saved knowledge can be retrieved in later sessions. Pending training examples can also be used to update the neural model.
+Saved knowledge can be retrieved in later sessions. Pending training examples can also be used to update the neural model. 
 
-However, persistent storage, information retrieval, and neural training are different mechanisms. Saving a fact does not guarantee that the model has learned it reliably or will always reproduce it correctly.
+> However, persistent storage, information retrieval, and neural training are different mechanisms. Saving a fact does not guarantee that the model has learned it reliably or will always reproduce it correctly.
 
 The current implementation does not provide unrestricted autonomous learning, independent goal formation, or automatic discovery of new training data from the internet.
 
