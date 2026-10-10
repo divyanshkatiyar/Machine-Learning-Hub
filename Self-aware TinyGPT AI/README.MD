@@ -144,24 +144,23 @@ A saved training example uses this structure:
 
 The actual files use JSON Lines (JSONL) format, meaning each record is stored as a separate JSON object on its own line.
 
-Saved knowledge can be retrieved in later sessions. Pending training examples can also be used to update the neural model. 
-
-> However, persistent storage, information retrieval, and neural training are different mechanisms. Saving a fact does not guarantee that the model has learned it reliably or will always reproduce it correctly.
+> Saved knowledge can be retrieved in later sessions. Pending training examples can also be used to update the neural model. However, persistent storage, information retrieval, and neural training are different mechanisms. Saving a fact does not guarantee that the model has learned it reliably or will always reproduce it correctly.
 
 The current implementation does not provide unrestricted autonomous learning, independent goal formation, or automatic discovery of new training data from the internet.
 
 ## 🛠️ Technology Stack
 
-Technology| Role
-Python| Core implementation and application logic
-NumPy| Neural-network computations, numerical operations, and parameter updates
-JSON| Structured representation of saved records
-JSONL| Persistent training examples and knowledge records
-NPZ| Storage of model parameters and optimizer state
-"unittest"| Integrated automated testing
-Pydroid| Intended Android Python development and execution environment
+|Technology| Role|
+|:--- |:--- |
+|Python| Core implementation and application logic|
+|NumPy| Neural-network computations, numerical operations, and parameter updates|
+|JSON| Structured representation of saved records|
+|JSONL| Persistent training examples and knowledge records|
+|NPZ| Storage of model parameters and optimizer state|
+|"unittest"| Integrated automated testing|
+|Pydroid| Intended Android Python development and execution environment|
 
-External machine-learning frameworks: The implementation does not use TensorFlow or PyTorch.
+> External machine-learning frameworks: The implementation does NOT use TensorFlow or PyTorch.
 
 The program is designed to run locally and does not require a hosted language-model API for its core conversational functionality.
 
@@ -169,11 +168,13 @@ The program is designed to run locally and does not require a hosted language-mo
 
 On its first launch, the program initializes the model and performs its configured bootstrap training. Subsequent launches attempt to load the saved model and train pending examples.
 
+```
 Run Automated Tests
 
 Execute the integrated self-test suite:
 
 python TinyGPT_Chatbot_v3.py --self-test
+```
 
 The tests cover selected behaviours, including:
 
