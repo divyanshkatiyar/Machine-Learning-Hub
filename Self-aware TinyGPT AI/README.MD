@@ -190,7 +190,7 @@ The tests cover selected behaviours, including:
 - Neural-output readability filtering.
 - Persistent personal-memory retrieval.
 
-Passing these tests demonstrates that the tested code paths behave as expected under the test conditions. It does not prove general intelligence, universal correctness, or production readiness.
+> ⚠️ Passing these tests demonstrates that the tested code paths behave as expected under the test conditions. It does not prove general intelligence, universal correctness, or production readiness.
 
 ## 🧪 Development Roadmap
 
