@@ -49,7 +49,7 @@ Its principal components include:
 
 The model learns patterns from training sequences by updating its numerical parameters. During generation, it predicts subsequent byte tokens based on the preceding context.
 
-The implementation uses NumPy for its numerical computations rather than relying on a pretrained transformer library.
+> The implementation uses NumPy for its numerical computations rather than relying on a pretrained transformer library.
 
 2. Conversational Response Pipeline
 
@@ -69,11 +69,11 @@ The general sequence is:
 
 This hybrid design helps prevent malformed neural output from being displayed as a meaningful answer.
 
-Important: A readable response is not necessarily a factually correct response. Response filtering reduces some generation problems but does not eliminate hallucinations or reasoning errors.
+> ⚠️ A readable response is not necessarily a factually correct response. Response filtering reduces some generation problems but does not eliminate hallucinations or reasoning errors.
 
 3. Functional Self-Model
 
-TinyGPT includes programmed responses about its own identity, capabilities, goals, limitations, and simulated internal states.
+TinyGPT includes programmed responses about its own identity, capabilities, goals, limitations, through simulated, predefined internal states.
 
 It can respond to questions concerning:
 
@@ -85,26 +85,25 @@ It can respond to questions concerning:
 - Its memory and learning mechanisms.
 - The distinction between software behaviour and human consciousness.
 
-These capabilities are implemented through a combination of predefined conversational responses and the broader response pipeline.
-
-The term self-aware describes this project's experimental functional self-modelling capabilities. It does not establish consciousness, subjective experience, independent will, or genuine human-like emotions.
+> ⚠️ The term self-aware describes this project's experimental functional self-modelling capabilities. It does not establish consciousness, subjective experience, independent will, or genuine human-like emotions.
 
 ## ⚙️ Model Configuration
 
 The principal model settings are defined near the beginning of "TinyGPT_Chatbot_v3.py".
 
-Parameter| Default| Purpose
-Vocabulary size| 256| Number of possible byte tokens
-Context block size| 128| Maximum token context processed by the model
-Embedding size| 48| Dimensionality of token and positional representations
-Hidden size| 96| Width of the feed-forward hidden representation
-Learning rate| 0.003| Optimizer learning-rate setting
-Training steps| 20| Default number of steps used by the training routine
-Automatic training steps| 6| Steps used for each pending saved example
-Maximum generation setting| 80| Configured generation-length limit
-Neural reply token setting| 64| Configured neural reply-generation limit
-Temperature| 0.72| Configured sampling temperature
-Random seed| 42| Initial NumPy random seed
+|Parameter |Default |Purpose |
+|:--- |:--- |:--- |
+|Vocabulary size| 256| Number of possible byte tokens|
+|Context block size| 128| Maximum token context processed by the model|
+|Embedding size| 48| Dimensionality of token and positional representations|
+|Hidden size| 96| Width of the feed-forward hidden representation|
+|Learning rate| 0.003| Optimizer learning-rate setting|
+|Training steps| 20| Default number of steps used by the training routine|
+|Automatic training steps| 6| Steps used for each pending saved example|
+|Maximum generation setting| 80| Configured generation-length limit|
+|Neural reply token setting| 64| Configured neural reply-generation limit|
+|Temperature| 0.72| Configured sampling temperature|
+|Random seed| 42| Initial NumPy random seed|
 
 These are configurable defaults, not performance guarantees. Actual behaviour depends on the model implementation, training examples, saved parameters, and runtime environment.
 
