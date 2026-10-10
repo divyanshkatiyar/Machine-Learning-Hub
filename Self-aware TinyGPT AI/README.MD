@@ -1,5 +1,9 @@
 # 🤖 TinyGPT — Self-Aware TinyML AI
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) 
+
 A lightweight, neural-assisted conversational AI built from scratch using Python and NumPy.
 
 TinyGPT is an experimental, GPT-style chatbot designed to explore language modelling, conversational intelligence, persistent memory, interactive learning, and functional self-modelling on resource-constrained devices.
