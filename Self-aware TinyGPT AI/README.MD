@@ -1,4 +1,4 @@
-🤖 TinyGPT — Self-Aware TinyML AI
+# 🤖 TinyGPT — Self-Aware TinyML AI
 
 A lightweight, neural-assisted conversational AI built from scratch using Python and NumPy.
 
@@ -13,12 +13,12 @@ TinyGPT is an experimental AI project. Its architecture, conversational capabili
 ✨ Key Features
 
 Feature| Description
-🧠 GPT-Style Neural Model| A compact language model implemented from scratch using NumPy.
+🧠 GPT-Style Neural Model| Compact language model implemented from scratch using NumPy.
 🔤 Byte-Level Tokenization| Processes UTF-8 text using a vocabulary of 256 possible byte values.
 💬 Conversational Interface| Supports interactive, text-based conversations through a command-line interface.
 🔎 Knowledge Retrieval| Retrieves relevant answers from built-in knowledge and locally stored question-answer pairs.
 💾 Persistent Memory| Saves supported facts and knowledge to local JSONL files for retrieval across sessions.
-📚 Interactive Learning| Accepts certain natural-language statements and stores useful information automatically.
+📚 Interactive Learning| Accepts certain natural-language statements & stores useful information automatically.
 🔄 Incremental Training| Trains the neural model on pending saved examples and persists updated model parameters.
 🪞 Functional Self-Model| Describes its identity, capabilities, simulated feelings, goals, wishes, and limitations through programmed responses.
 🧮 Basic Reasoning| Includes support for arithmetic, Boolean logic, and selected logical inference tasks.
@@ -291,13 +291,5 @@ Useful contributions include:
 - Evaluation of response quality and training behaviour.
 
 When reporting an issue, include the relevant error message, execution environment, steps to reproduce the problem, and a minimal example where possible. Avoid sharing private memory files or sensitive training data.
-
-📌 Project Summary
-
-TinyGPT explores how a compact GPT-style language model can be implemented from scratch and integrated with conversational logic, persistent knowledge, interactive teaching, and functional self-modelling.
-
-The project prioritizes experimentation, transparent implementation, and development on resource-constrained devices.
-
-Built with Python and NumPy. Designed for experimentation. Still under development.
 
 ---
