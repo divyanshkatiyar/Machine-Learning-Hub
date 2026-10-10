@@ -55,6 +55,8 @@ The model learns patterns from training sequences by updating its numerical para
 
 > 🐍 The implementation uses NumPy for its numerical computations rather than relying on a pretrained transformer library.
 
+---
+
 2. Conversational Response Pipeline
 
 A user message passes through a response pipeline that combines neural generation with deterministic processing.
@@ -74,6 +76,8 @@ The general sequence is:
 This hybrid design helps prevent malformed neural output from being displayed as a meaningful answer.
 
 > ⚠️ A readable response is not necessarily a factually correct response. Response filtering reduces some generation problems but does not eliminate hallucinations or reasoning errors.
+
+---
 
 3. Functional Self-Model
 
