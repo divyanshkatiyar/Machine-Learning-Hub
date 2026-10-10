@@ -6,11 +6,11 @@ TinyGPT is an experimental, GPT-style chatbot designed to explore language model
 
 Unlike projects that simply connect to a large, externally hosted language model, TinyGPT implements its own compact neural language model and combines neural text generation with knowledge retrieval, deterministic responses, basic reasoning, and persistent local storage.
 
-«🚧 Development Status: Under Development
+## 🚧 Development Status: Under Development
 
 TinyGPT is an experimental AI project. Its architecture, conversational capabilities, learning mechanisms, and response quality are still being developed and evaluated. It is not a production-ready AI system.»
 
-✨ Key Features
+## ✨ Key Features
 
 Feature| Description
 🧠 GPT-Style Neural Model| Compact language model implemented from scratch using NumPy.
@@ -26,9 +26,7 @@ Feature| Description
 📱 Android-Oriented Design| Designed with lightweight dependencies and compatibility with environments such as Pydroid in mind.
 🧪 Integrated Self-Tests| Includes tests for model generation, training, memory, reasoning, and self-model responses.
 
-🏗️ Technical Architecture
-
-TinyGPT uses a hybrid conversational architecture. Rather than relying exclusively on neural text generation, it combines several components to improve response reliability.
+## 🏗️ Technical Architecture
 
 1. Neural Language Model
 
@@ -90,7 +88,7 @@ These capabilities are implemented through a combination of predefined conversat
 
 The term self-aware describes this project's experimental functional self-modelling capabilities. It does not establish consciousness, subjective experience, independent will, or genuine human-like emotions.
 
-⚙️ Model Configuration
+## ⚙️ Model Configuration
 
 The principal model settings are defined near the beginning of "TinyGPT_Chatbot_v3.py".
 
@@ -109,7 +107,7 @@ Random seed| 42| Initial NumPy random seed
 
 These are configurable defaults, not performance guarantees. Actual behaviour depends on the model implementation, training examples, saved parameters, and runtime environment.
 
-📚 Persistent Memory and Learning
+## 📚 Persistent Memory and Learning
 
 TinyGPT maintains local files for its model, training examples, and knowledge.
 
@@ -147,7 +145,7 @@ However, persistent storage, information retrieval, and neural training are diff
 
 The current implementation does not provide unrestricted autonomous learning, independent goal formation, or automatic discovery of new training data from the internet.
 
-🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 Technology| Role
 Python| Core implementation and application logic
@@ -162,7 +160,7 @@ External machine-learning frameworks: The implementation does not use TensorFlow
 
 The program is designed to run locally and does not require a hosted language-model API for its core conversational functionality.
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 Requirements
 
@@ -221,7 +219,7 @@ The tests cover selected behaviours, including:
 
 Passing these tests demonstrates that the tested code paths behave as expected under the test conditions. It does not prove general intelligence, universal correctness, or production readiness.
 
-🧪 Development Roadmap
+## 🧪 Development Roadmap
 
 TinyGPT is an ongoing experimental project. Potential areas for further development include:
 
@@ -236,7 +234,7 @@ TinyGPT is an ongoing experimental project. Potential areas for further developm
 
 These are development directions, not claims that the capabilities have already been implemented.
 
-⚠️ Limitations and Warnings
+## ⚠️ Limitations and Warnings
 
 1. Experimental model
 
@@ -266,7 +264,7 @@ Model initialization, training, and generation consume processing time and memor
 
 TinyGPT does not independently acquire unrestricted knowledge, establish its own goals, or modify its entire source code autonomously. Its learning and memory operations are governed by the implemented program logic.
 
-📜 Disclaimer
+## 📜 Disclaimer
 
 TinyGPT is provided as an experimental software project for educational, research, and development purposes.
 
@@ -276,7 +274,7 @@ The author is not responsible for decisions made solely on the basis of the chat
 
 Nothing in this project should be interpreted as a scientific demonstration of artificial consciousness or human-like subjective experience.
 
-🤝 Contributions
+## 🤝 Contributions
 
 Contributions, bug reports, testing feedback, and technical suggestions are welcome.
 
